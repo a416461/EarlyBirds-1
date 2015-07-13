@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain\bin\Debug\Domain.dll">
+   <Modules>
+    <Module Name="domain.dll">
+     <Namespaces>
+      <Namespace Name="Domain">
+       <Types>
+        <Type Name="Channel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String,System.String,Domain.ChatLog)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Channel.cs" Line="24">'Channel.Channel(string, string, ChatLog)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Channel..ctor(String, String, ChatLog)&#xD;&#xA;Channel.set_Chat(ChatLog):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Channel.cs" Line="24">'Channel.Channel(string, string, ChatLog)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Channel..ctor(String, String, ChatLog)&#xD;&#xA;Channel.set_Tickets(ICollection&lt;Ticket&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Channel.cs" Line="24">'Channel.Channel(string, string, ChatLog)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Channel..ctor(String, String, ChatLog)&#xD;&#xA;Channel.set_Users(ICollection&lt;User&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AdminId" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#set_AdminId(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Channel.cs" Line="14">'Channel.AdminId.set(int)' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Id" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#set_Id(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Channel.cs" Line="13">'Channel.Id.set(int)' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Tickets" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Channel.cs" Line="18">Change 'Channel.Tickets' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Users" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Channel.cs" Line="16">Change 'Channel.Users' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ChatLog" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="ChatLog.cs" Line="19">'ChatLog.ChatLog(int)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;ChatLog..ctor(Int32)&#xD;&#xA;ChatLog.set_Messages(ICollection&lt;Message&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="ChatLog.cs" Line="19">'ChatLog.ChatLog(int)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;ChatLog..ctor(Int32)&#xD;&#xA;ChatLog.set_Users(ICollection&lt;User&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Id" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#set_Id(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="ChatLog.cs" Line="11">'ChatLog.Id.set(int)' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Messages" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="ChatLog.cs" Line="15">Change 'ChatLog.Messages' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Users" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="ChatLog.cs" Line="17">Change 'ChatLog.Users' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Client" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Client.cs" Line="16">'Client.Client(string, string)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Client..ctor(String, String)&#xD;&#xA;Client.set_Tickets(ICollection&lt;Ticket&gt;):Void</Issue>
+            </Message>
+            <Message TypeName="InstantiateArgumentExceptionsCorrectly" Category="Microsoft.Usage" CheckId="CA2208" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+             <Issue Name="NoArguments" Certainty="95" Level="CriticalError" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Client.cs" Line="20">Call the 'ArgumentNullException' constructor that contains a message and/or paramName parameter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Id" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#set_Id(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Client.cs" Line="13">'Client.Id.set(int)' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Tickets" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Client.cs" Line="14">Change 'Client.Tickets' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Database" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Channels" Kind="Property" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Database.cs" Line="45">Change 'List&lt;Channel&gt;' in 'Database.Channels' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ChannelTickets" Kind="Property" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Database.cs" Line="110">Change 'List&lt;ChannelTicket&gt;' in 'Database.ChannelTickets' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ChannelUsers" Kind="Property" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Database.cs" Line="93">Change 'List&lt;ChannelUser&gt;' in 'Database.ChannelUsers' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Chats" Kind="Property" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Database.cs" Line="69">Change 'List&lt;ChatLog&gt;' in 'Database.Chats' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Clients" Kind="Property" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Database.cs" Line="33">Change 'List&lt;Client&gt;' in 'Database.Clients' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Messages" Kind="Property" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Database.cs" Line="81">Change 'List&lt;Message&gt;' in 'Database.Messages' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Tickets" Kind="Property" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Database.cs" Line="57">Change 'List&lt;Ticket&gt;' in 'Database.Tickets' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UserChats" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;UserChat&gt;' in 'Database.UserChats' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'Database.UserChats' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Users" Kind="Property" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Database.cs" Line="20">Change 'List&lt;User&gt;' in 'Database.Users' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_Users()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="uType" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Database.cs" Line="24">'Database.Users.get()' declares a variable, 'uType', of type 'UserType?', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EarlyBirdsInitializer" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetMessages()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="Domain.Message.#ctor(System.String,System.Int32,System.Int32)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="EarlyBirdsInitializer.cs" Line="98">Method 'EarlyBirdsInitializer.GetMessages()' passes a literal string as parameter 'text' of a call to 'Message.Message(string, int, int)'. Retrieve the following string(s) from a resource table instead: "hi".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="EarlyBirdsInitializer.cs" Line="98">Method 'EarlyBirdsInitializer.GetMessages()' passes a literal string as parameter 'text' of a call to 'Message.Message(string, int, int)'. Retrieve the following string(s) from a resource table instead: "hi2".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="EarlyBirdsInitializer.cs" Line="98">Method 'EarlyBirdsInitializer.GetMessages()' passes a literal string as parameter 'text' of a call to 'Message.Message(string, int, int)'. Retrieve the following string(s) from a resource table instead: "hi3".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="EarlyBirdsInitializer.cs" Line="98">Method 'EarlyBirdsInitializer.GetMessages()' passes a literal string as parameter 'text' of a call to 'Message.Message(string, int, int)'. Retrieve the following string(s) from a resource table instead: "hi4".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Message" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Id" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#set_Id(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Message.cs" Line="11">'Message.Id.set(int)' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Ticket" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Ticket.cs" Line="22">'Ticket.Ticket(string, int)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Ticket..ctor(String, Int32)&#xD;&#xA;Ticket.set_Channels(ICollection&lt;Channel&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Channels" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Ticket.cs" Line="17">Change 'Ticket.Channels' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Edit(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="s" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Ticket.cs" Line="51">In method 'Ticket.Edit(string)', consider providing a more meaningful name than parameter name 's'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Id" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#set_Id(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Ticket.cs" Line="11">'Ticket.Id.set(int)' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Resolve(System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="b" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="Ticket.cs" Line="34">In method 'Ticket.Resolve(bool)', consider providing a more meaningful name than parameter name 'b'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="User" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String,System.String,Domain.UserType)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="User.cs" Line="30">'User.User(string, string, UserType)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;User..ctor(String, String, UserType)&#xD;&#xA;User.set_Channels(ICollection&lt;Channel&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="User.cs" Line="30">'User.User(string, string, UserType)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;User..ctor(String, String, UserType)&#xD;&#xA;User.set_Chats(ICollection&lt;ChatLog&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="User.cs" Line="30">'User.User(string, string, UserType)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;User..ctor(String, String, UserType)&#xD;&#xA;User.set_Messages(ICollection&lt;Message&gt;):Void</Issue>
+            </Message>
+            <Message TypeName="InstantiateArgumentExceptionsCorrectly" Category="Microsoft.Usage" CheckId="CA2208" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+             <Issue Name="NoArguments" Certainty="95" Level="CriticalError" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="User.cs" Line="34">Call the 'ArgumentNullException' constructor that contains a message and/or paramName parameter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Channels" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="User.cs" Line="19">Change 'User.Channels' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Chats" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="User.cs" Line="21">Change 'User.Chats' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Id" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#set_Id(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="User.cs" Line="15">'User.Id.set(int)' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Messages" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain" File="User.cs" Line="23">Change 'User.Messages' to be read-only by removing the property setter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UserT" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2015-07-09 19:51:25Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'User.UserT' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+   <Name>Collection properties should be read only</Name>
+   <Description>Properties that return collections should be read-only so that users cannot entirely replace the backing store. Users can still modify the contents of the collection by calling relevant methods on the collection. Note that the XmlSerializer class has special support for deserializing read-only collections. See the XmlSerializer overview for more information.</Description>
+   <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182327.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>Do not call overridable methods in constructors</Name>
+   <Description>Virtual methods defined on the class should not be called from constructors. If a derived class has overridden the method, the derived class version will be called (before the derived class constructor is called).</Description>
+   <Resolution Name="Default">{0} contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>Do not declare visible instance fields</Name>
+   <Description>Instance fields that are visible outside of the type that declares them, limit your ability to change the implementation details for those data items. Use properties instead. They do not compromise usability or performance and they do provide flexibility in that they conceal the implementation details of the underlying data.</Description>
+   <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182141.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="MemberParameterMoreMeaningfulName">In method {0}, consider providing a more meaningful name than parameter name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="InstantiateArgumentExceptionsCorrectly" Category="Microsoft.Usage" CheckId="CA2208">
+   <Name>Instantiate argument exceptions correctly</Name>
+   <Description>String arguments passed to constructors of ArgumentException and its derived types should be correct. Types derived from ArgumentException have inconsistent constructor overloads with respect to the message and paramName parameters as compared to ArgumentException.</Description>
+   <Resolution Name="NoArguments">Call the {0} constructor that contains a message and/or paramName parameter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182347.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211">
+   <Name>Non-constant fields should not be visible</Name>
+   <Description>Static fields should be constant unless you carefully manage access to the field using locks. Using static variables without making them thread safe can compromise execution state. This rule applies to managed code libraries. If the analyzed assembly is an application, it is usually safe to exclude violations of this rule.</Description>
+   <Resolution Name="Default">Consider making {0} non-public or a constant.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182353.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182278.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

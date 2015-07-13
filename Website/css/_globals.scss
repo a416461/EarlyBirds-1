@@ -1,0 +1,40 @@
+﻿body {
+    @include scrollbars(.5em, slategray);
+    color: $text-color;
+    min-height: 100%;
+    text-align: center;
+    background: $primary-color;
+    font-family: 'Archivo Black', Arial;
+}
+
+div {
+    overflow: auto;
+}
+
+ul {
+    li {
+        @include internal-object;
+    }
+}
+
+a {
+    color: $text-color;
+    text-decoration: none;
+    &:hover {
+        color: $link-color;
+    }
+    &.selected {
+        color: $link-color;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 15px 0;
+    text-align:center;
+}
+
+p {
+    margin: 3px;
+    padding: 1px;
+    text-align: left;
+}

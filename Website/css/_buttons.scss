@@ -1,0 +1,13 @@
+﻿button {
+    @include interactive;
+    background: $tile-internal;
+    max-width: 90%;
+    max-height: 15%;
+    margin: 1vh;
+    text-align: center;
+    display: block;
+    padding: 5px;
+}
+.closeButton {
+    
+}

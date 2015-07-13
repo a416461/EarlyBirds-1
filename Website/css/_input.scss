@@ -1,0 +1,12 @@
+﻿input, textarea{
+    @include interactive;
+    max-width: 90%;
+    max-height: 15%;
+    margin: 1vh auto;
+    text-align: center;
+    display: block;
+    color: $secondary-color;
+    &:hover{
+        color: $secondary-internal;
+    }
+}

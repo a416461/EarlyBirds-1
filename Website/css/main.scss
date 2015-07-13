@@ -1,0 +1,19 @@
+﻿//Load resets and grid
+@import "normalize.css";
+@import "_reset.scss";
+@import "grid.css";
+
+//Define
+@import "_colorpalette.scss";
+@import "_mixins.scss";
+
+
+//Global Styles
+@import "_globals.scss";
+
+
+//Components
+@import "_containers.scss";
+@import "_buttons.scss";
+@import "_input.scss";
+@import "_img.scss";

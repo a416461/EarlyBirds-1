@@ -1,0 +1,16 @@
+﻿<div class="ticket">
+    <collapsible title="Ticket {{ticket.id}}">
+        <div class="tile-internal">
+            <h6>Question</h6>
+            <p>{{ticket.question}}</p>
+        </div>
+        <div class="tile-internal">
+            <h6>Response</h6>
+        </div>
+        <form ng-submit="submitResponse(ticket.id, ticket.response)">
+            <textarea ng-model="ticket.response">{{ticket.response}}</textarea>
+            <button type="submit">Save</button>
+            <button ng-click="deleteTicket(ticket.id)">Delete</button>
+        </form>
+    </collapsible>
+</div>

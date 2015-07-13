@@ -1,0 +1,16 @@
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\bin\Website.dll.config
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\bin\Website.dll
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\bin\Website.pdb
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\bin\Website.dll.CodeAnalysisLog.xml
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\bin\Website.dll.lastcodeanalysissucceeded
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\obj\Debug\Website.dll
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\obj\Debug\Website.pdb
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds - Entity Framework HellHole\Website\bin\Website.dll.config
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds - Entity Framework HellHole\Website\bin\Website.dll
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds - Entity Framework HellHole\Website\bin\Website.pdb
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds - Entity Framework HellHole\Website\bin\Website.dll.CodeAnalysisLog.xml
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds - Entity Framework HellHole\Website\bin\Website.dll.lastcodeanalysissucceeded
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds - Entity Framework HellHole\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds - Entity Framework HellHole\Website\obj\Debug\Website.dll
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds - Entity Framework HellHole\Website\obj\Debug\Website.pdb

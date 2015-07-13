@@ -1,0 +1,13 @@
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\Service.dll
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\Service.pdb
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\Domain.dll
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\EntityFramework.dll
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\Domain.pdb
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\EntityFramework.xml
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\obj\Debug\Service.dll
+C:\Users\hlatourette\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\obj\Debug\Service.pdb

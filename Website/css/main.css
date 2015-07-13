@@ -1,0 +1,325 @@
+@import url(normalize.css);
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+@import url(grid.css);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  color: #dddddd;
+  min-height: 100%;
+  text-align: center;
+  background: #dddddd;
+  font-family: 'Archivo Black', Arial; }
+  body ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 5px; }
+  body ::-webkit-scrollbar-thumb {
+    background: slategray;
+    border-radius: 5px; }
+  body ::-webkit-scrollbar-track {
+    background: #b8c0c8;
+    border-radius: 5px; }
+  body body {
+    scrollbar-face-color: slategray;
+    scrollbar-track-color: #b8c0c8;
+    border-radius: 5px; }
+
+div {
+  overflow: auto; }
+
+ul li {
+  border-radius: 5px;
+  padding: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  overflow: hidden; }
+
+a {
+  color: #dddddd;
+  text-decoration: none; }
+  a:hover {
+    color: #de8642; }
+  a.selected {
+    color: #de8642; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 15px 0;
+  text-align: center; }
+
+p {
+  margin: 3px;
+  padding: 1px;
+  text-align: left; }
+
+/*************************************
+Generics
+**************************************/
+/*Tile*/
+.tile {
+  -webkit-transition: background 0.15s ease-in-out;
+  -moz-transition: background 0.15s ease-in-out;
+  -ms-transition: background 0.15s ease-in-out;
+  -o-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+  border-radius: 5px;
+  padding: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  overflow: hidden;
+  min-width: 10px;
+  min-height: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  overflow: hidden;
+  background: #171717;
+  box-shadow: 15px 15px 5px #343434;
+  margin: 5px 8px;
+  padding: 5px 5px;
+  width: 100%;
+  min-height: 300px;
+  text-align: left; }
+  .tile:hover {
+    background: #272727; }
+  .tile header {
+    width: 100%;
+    background: #505050;
+    border-radius: 5px; }
+  .tile p {
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    overflow: hidden;
+    max-width: 90%;
+    margin: auto; }
+  .tile button {
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    overflow: hidden;
+    padding: 5px;
+    width: 100%; }
+  .tile .chatLog {
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    overflow: hidden;
+    background: #505050;
+    max-height: 200px;
+    overflow-y: scroll; }
+    .tile .chatLog .message {
+      border-radius: 5px;
+      padding: 1px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 95%;
+      overflow: hidden;
+      padding: 3px;
+      background: #f97F20;
+      overflow-y: visible; }
+  .tile .channel {
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    overflow: hidden;
+    width: 100%;
+    background-color: #505050; }
+  .tile .ticket {
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    overflow: hidden;
+    width: 100%;
+    background-color: #505050; }
+
+/*Generic Bar (i.e. header, footer, taskpane, etc.)*/
+header, footer {
+  background: #171717;
+  border: solid;
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+  min-height: 50px; }
+
+/*************************************
+Header
+**************************************/
+/*Heading*/
+header .display {
+  height: 10vh;
+  width: 100%; }
+header .logo {
+  color: #dddddd;
+  text-align: center;
+  margin: 0; }
+
+/*Navigation Tabs*/
+nav {
+  padding: 10px 0; }
+  nav li {
+    display: inline-block;
+    font-size: 20px; }
+  nav ul {
+    margin: 0 10px;
+    padding: 0; }
+
+/*************************************
+Main
+**************************************/
+/*Main Content (Holds the tiles)*/
+main {
+  padding: 10px; }
+  main #taskpane {
+    float: right; }
+
+.articleBacking {
+  border-radius: 5px;
+  padding: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  overflow: hidden;
+  background: #171717; }
+
+/*************************************
+Footer
+**************************************/
+/*Footer*/
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  background: #171717; }
+  footer .social {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px; }
+
+button {
+  -webkit-transition: background 0.15s ease-in-out;
+  -moz-transition: background 0.15s ease-in-out;
+  -ms-transition: background 0.15s ease-in-out;
+  -o-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+  border-radius: 5px;
+  padding: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  overflow: hidden;
+  min-width: 10px;
+  min-height: 10px;
+  border: none;
+  background: #505050;
+  max-width: 90%;
+  max-height: 15%;
+  margin: 1vh;
+  text-align: center;
+  display: block;
+  padding: 5px; }
+  button:hover {
+    background: #272727; }
+
+input, textarea {
+  -webkit-transition: background 0.15s ease-in-out;
+  -moz-transition: background 0.15s ease-in-out;
+  -ms-transition: background 0.15s ease-in-out;
+  -o-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+  border-radius: 5px;
+  padding: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  overflow: hidden;
+  min-width: 10px;
+  min-height: 10px;
+  border: none;
+  max-width: 90%;
+  max-height: 15%;
+  margin: 1vh auto;
+  text-align: center;
+  display: block;
+  color: #171717; }
+  input:hover, textarea:hover {
+    background: #272727; }
+  input:hover, textarea:hover {
+    color: #f97F20; }
+
+img {
+  border-radius: 5px;
+  padding: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  overflow: hidden;
+  padding: 10px; }
+
+/*# sourceMappingURL=main.css.map */

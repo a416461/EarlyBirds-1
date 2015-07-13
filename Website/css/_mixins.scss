@@ -1,0 +1,63 @@
+﻿//applied
+@mixin edge-object {
+    background: $secondary-color;
+    border: solid;
+    border-width: 0;
+}
+
+//m
+@mixin internal-object {
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    overflow: hidden;
+}
+
+@mixin interactive {
+    @include fade-transition(background);
+    @include internal-object;
+    min-width: 10px;
+    min-height: 10px;
+    border: none;
+
+    &:hover {
+        background: $highlight;
+    }
+}
+
+@mixin fade-transition($element) {
+    -webkit-transition: $element 0.15s ease-in-out;
+    -moz-transition: $element 0.15s ease-in-out;
+    -ms-transition: $element 0.15s ease-in-out;
+    -o-transition: $element 0.15s ease-in-out;
+    transition: $element 0.15s ease-in-out;
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+    // For Google Chrome
+    ::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: $background-color;
+        border-radius: 5px;
+    }
+    // For Internet Explorer
+    body {
+        scrollbar-face-color: $foreground-color;
+        scrollbar-track-color: $background-color;
+        border-radius: 5px;
+    }
+}

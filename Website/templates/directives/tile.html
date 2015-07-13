@@ -1,0 +1,30 @@
+﻿<div class="tile">
+    <button class="closeButton" ng-click="close && close(title)"></button>
+    <h4>
+        {{title}}
+    </h4>
+
+    <button ng-repeat="user in users">{{user.firstName}} {{user.lastName}}</button>
+
+    <channel ng-repeat="channel in channels"></channel>
+
+    <button ng-repeat="uchannel in uchannels" ng-click="click && click(uchannel.name)">
+        {{uchannel.name}} {{uchannel.category}}
+    </button>
+
+    <ul class="tickets-list">
+        <li ng-repeat="ticket in tickets">
+            <ticket />
+        </li>
+    </ul>
+
+    <div class="chatLog" ng-hide="hideShowChat()">
+        <p ng-repeat="message in chan.chatLog.messages" class="message">{{message.userId}} {{message.text}}</p>
+        <p>
+            {{preview}}
+        </p>
+        <form ng-submit="submitMessage()">
+            <input name="chatText" ng-model="chatText" type="text" ng-model="preview" />
+        </form>
+    </div>
+</div>

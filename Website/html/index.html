@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html ng-app="earlyBirdsApp">
+<head>
+    <title>Welcome to EarlyBirds</title>
+    <base href="http://localhost:2000/html/index.html" />
+    <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+    <link href="/css/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+</head>
+<body>
+    <header>
+        <div class="row">
+            <canvas class="display" id="mainDisp"></canvas>
+            <a href="home" class="logo">
+                <h1>EarlyBirds</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="mainPage">Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <ng-view></ng-view>
+
+    <footer>
+        <div class="row">
+            <a href="http://twitter.com/"><img src="img/twitter-wrap.png" alt="Twitter Logo goes here" class="social-icon" /></a>
+            <a href="http://facebook.com"><img src="img/facebook-wrap.png" alt="Facebook Logo goes here" class="social-icon" /></a>
+            <p>&copy; 2015 Hunter LaTourette.</p>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+
+    <!--Libraries-->
+    <script src="/js/libraries/jquery-1.11.3.min.js"></script>
+    <script src="/js/libraries/angular.min.js"></script>
+    <script src="/js/libraries/angular-route.min.js"></script>
+    <script src="/js/libraries/canvasAnimation.js"></script>
+
+    <!--WebApp-->
+    <script src="/js/earlybirds.module.js"></script>
+    <script src="/js/earlybirds.routes.js"></script>
+
+    <!--Controllers-->
+    <script src="/js/controllers/home.controller.js"></script>
+    <script src="/js/controllers/about.controller.js"></script>
+    <script src="/js/controllers/mainPage.controller.js"></script>
+    <script src="/js/controllers/tile.controller.js"></script>
+
+    <!--Directives-->
+    <script src="/js/directives/dragDropGrid.directive.js"></script>
+    <script src="/js/directives/tile.directive.js"></script>
+    <script src="/js/directives/collapsible.directive.js"></script>
+    <script src="/js/directives/ticket.directive.js"></script>
+    <script src="/js/directives/channel.directive.js"></script>
+    <script src="/js/directives/draggable.directive.js"></script>
+    <script src="/js/directives/dropTarget.directive.js"></script>
+
+    <!--Services-->
+    <script src="/js/services/gridEventHelper.service.js"></script>
+    <script src="/js/services/serverCommunication.service.js"></script>
+
+</body>
+</html>

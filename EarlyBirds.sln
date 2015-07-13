@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{CAEF5A14-AA40-489F-9319-79E9A5C1A614}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{50E71162-023D-4C8C-B149-DE9AB69EE9E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{99ABC55F-10B9-465B-A9DB-F37E0DC28CDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0808D95E-63AD-4576-9A35-F3C3A791935C}"
+	ProjectSection(SolutionItems) = preProject
+		CustomDictionary.xml = CustomDictionary.xml
+		rules.ruleset = rules.ruleset
+		Settings.StyleCop = Settings.StyleCop
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{D70E94A3-454F-480B-9FDE-6CEAB303E8CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAEF5A14-AA40-489F-9319-79E9A5C1A614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEF5A14-AA40-489F-9319-79E9A5C1A614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAEF5A14-AA40-489F-9319-79E9A5C1A614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEF5A14-AA40-489F-9319-79E9A5C1A614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50E71162-023D-4C8C-B149-DE9AB69EE9E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E71162-023D-4C8C-B149-DE9AB69EE9E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E71162-023D-4C8C-B149-DE9AB69EE9E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E71162-023D-4C8C-B149-DE9AB69EE9E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99ABC55F-10B9-465B-A9DB-F37E0DC28CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99ABC55F-10B9-465B-A9DB-F37E0DC28CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99ABC55F-10B9-465B-A9DB-F37E0DC28CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99ABC55F-10B9-465B-A9DB-F37E0DC28CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70E94A3-454F-480B-9FDE-6CEAB303E8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70E94A3-454F-480B-9FDE-6CEAB303E8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70E94A3-454F-480B-9FDE-6CEAB303E8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70E94A3-454F-480B-9FDE-6CEAB303E8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal
